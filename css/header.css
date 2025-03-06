@@ -1,0 +1,110 @@
+/* Estilo do Header */
+
+header {
+    width: 100%;
+    padding: 20px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999999999999999;
+
+    transition: .9s;
+}
+
+header .interface {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo img {
+    max-width: 100px;
+}
+
+/* Estillo do menu dinâmico */
+
+header .logo img.logo_preta {
+    display: none;
+}
+
+header.rolar {
+    background-color: #fff;
+    padding: 20px 0;
+    box-shadow: 0 0 8px #00000061;
+}
+
+header.rolar .menu-desktop nav ul li a {
+    color: #000;
+}
+
+header.rolar .menu-desktop nav ul li a:hover {
+    color: #FFB142;
+}
+
+header.rolar .btn-contato button {
+    border: 2px solid #000;
+    color: #000;
+}
+
+header.rolar .btn-contato button:hover {
+    border: 2px solid #000;
+    background-color: #FFB142;
+    color: #fff;
+}
+
+header.rolar .logo .logo_branca {
+    display: none;
+}
+
+header.rolar .logo .logo_preta {
+    display: block;
+}
+
+/* FIM */
+
+header .menu-desktop nav ul {
+    list-style-type: none;
+}
+
+header .menu-desktop nav ul li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header .menu-desktop nav ul li a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: "Montserrat", serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.menu-desktop nav a:hover {
+    color: #FFB142;
+    transform: scale(1.1);
+}
+
+header .btn-contato button {
+    width: 140px;
+    height: 50px;
+    outline: none;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    background-color: transparent;
+    cursor: pointer;
+
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+header .btn-contato button:hover {
+    color: #FFB142;;
+    border: 2px solid #FFB142;
+    transform: scale(1.1);
+}

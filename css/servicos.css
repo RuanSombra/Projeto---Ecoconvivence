@@ -1,0 +1,98 @@
+/* Estilizando sobre os serviços */
+
+section.servicos {
+    background-color: #E3E3E3;
+    padding: 209px 0px;
+}
+
+.servicos .itens-container {
+    display: flex;
+    /* display: grid;
+    grid-template-columns: 1fr 2fr; */
+}
+
+.servicos .itens-container .txt-itens h3 {
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-size: 16px;
+    color: #FFB142;
+}
+
+.servicos .itens-container .txt-itens h2 {
+    font-weight: normal;
+    font-size: 38px;
+}
+
+.servicos .itens-container .txt-itens h2 span {
+    font-weight: bold;
+}
+
+.servicos .itens-container .txt-sub-itens {
+    width: 100%;
+    display: grid;
+    margin-top: 250px;
+    /* margin-top: 200px; */
+}
+
+.servicos .itens-container .txt-sub-itens h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    color: #FFB142;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2D2D2D;
+}
+
+.servicos .itens-container .txt-sub-itens p {
+    color: #878C8D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 343px; */
+}
+
+/* Container Serviços */
+
+.servicos .txt-adc-itens {
+    /* border: 5px solid red; */
+    padding-top: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-around;
+}
+
+.servicos .txt-adc-itens .container-servicos {
+    /* border: 5px solid green; */
+    border-radius: 30px;
+    /* background-color: #ffff; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.servicos .txt-adc-itens .container-servicos .img-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.servicos .txt-adc-itens .container-servicos .img-titulo img {
+    width: 40px;
+    height: 40px;
+}
+
+.servicos .txt-adc-itens .container-servicos .img-titulo h3 {
+    font-weight: bold;
+    color: #FFB142;
+}
+
+.servicos .txt-adc-itens .container-servicos .paragrafo {
+    /* border: 5px solid red; */
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: justify;
+}

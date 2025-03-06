@@ -1,0 +1,72 @@
+/* Estilizando sobre a empresa */
+
+section.empresa {
+    background-color: #F6F6F6;
+    padding: 209px 0px;
+}
+
+.empresa .itens-container {
+    /* border: 5px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.empresa .itens-container .txt-itens {
+    /* border: 5px solid green; */
+    width: 575px;
+}
+
+.empresa .itens-container .txt-itens h3 {
+    font-weight: normal;
+    letter-spacing: 5px;
+    font-size: 16px;
+    color: #FFB142;
+}
+
+.empresa .itens-container .txt-itens h2 {
+    font-weight: normal;
+    font-size: 38px;
+}
+
+.empresa .itens-container .txt-itens h2 span {
+    font-weight: bold;
+}
+
+.empresa .itens-container .txt-itens p {
+    /* border: 5px solid; */
+    color: #878C8D;
+    text-align: justify;
+    margin-right: 25px;
+}
+
+.empresa .itens-container .img-itens {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.empresa .itens-container .img-itens span, img {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.empresa .itens-container .txt-sub-itens h1 {
+    display: flex;
+    font-size: 12rem;
+    color: #FFB142;
+    text-shadow: 4px 4px 4px black;
+}
+
+.empresa .itens-container .txt-sub-itens h2 {
+    font-size: 5rem;
+}
+
+.empresa .itens-container .txt-sub-itens span {
+    font-size: 26px;
+}
+

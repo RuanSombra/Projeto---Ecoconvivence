@@ -1,0 +1,63 @@
+/* Estilizando o contato */
+
+section.contato {
+    background-color: #fff;
+    padding: 80px 0;
+}
+
+.txt-contato, .icons-contato {
+    display: inline-block;
+    width: 50%;
+    margin-right: -4px;
+    vertical-align: middle;
+}
+
+.contato .txt-contato h3 {
+    font-size: 3em;
+    font-weight: 200;
+    line-height: 50px;
+    margin-bottom: 20px;
+}
+
+.contato .txt-contato h3 span {
+    display: block;
+    font-weight: bold;
+}
+
+.contato .icons-contato a {
+    text-decoration: none;
+}
+
+.contato .icons-contato button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 60%;
+    height: 60px;
+    margin: 0 auto 20px auto;
+    padding: 0 60px; 
+
+    background-color: transparent;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 700;
+}
+
+.contato .icons-contato button:hover {
+    background-color: #FFB142;
+    color: #fff;
+}
+
+.contato .icons-contato button i {
+    font-size: 20px;
+}
+
+.contato .icons-contato p {
+    /* border: 5px solid red; */
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

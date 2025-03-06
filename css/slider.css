@@ -1,0 +1,144 @@
+
+.slider {
+    height: 98vh;
+    position: relative;
+}
+
+.slider .interface {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.slider .slider-container .slider-box {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+
+    opacity: 0;
+    transition: .5s;
+}
+
+.slider .slider-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slider .slider-box::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, #000, transparent);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slider .slider-box .texto-slider {
+    position: absolute;
+    left: 16%;
+    top: 35%;
+    z-index: 1;
+
+    width: 80%;
+    max-width: 600px;
+}
+
+.slider .slider-box .texto-slider span {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.slider .slider-box .texto-slider h1 {
+    color: #FFB142;
+    font-size: 9.375rem;
+    font-weight: bold;
+}
+
+@keyframes animaTexto{
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.slider .slider-box.ativo h1,.slider .slider-box.ativo span{
+    transform: translateY(60px);
+    opacity: 0;
+    animation: animaTexto .5s ease-in-out .7s forwards;
+}
+
+.slider .slider-box.ativo h1 {
+    animation-delay: 1s;
+}
+
+.slider-container .slider-box.ativo {
+    opacity: 1;
+    z-index: 2;
+}
+
+/* Estilização das setas */
+
+.setas {
+    width: 100%;
+    height: 100%;
+    padding: 0 4%;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    z-index: 2;
+}
+
+.setas button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: .2s;
+}
+
+.setas button:hover {
+    color: #FFB142;
+}
+
+/* Estilização dos botões de nav */
+
+.btn-nav-box {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 50px;
+    z-index: 7777777;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.btn-nav-box .btn-nav {
+    width: 30px;
+    height: 10px;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.btn-nav-box .btn-nav:hover {
+    background-color: #FFB142;
+}
+
+.btn-nav-box .btn-nav.ativo {
+    background-color: #FFB142;
+}
