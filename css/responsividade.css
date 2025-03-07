@@ -160,6 +160,7 @@
     .servicos .itens-container .img-itens img {
         width: 350px;
         border-radius: 20px;
+        margin: 0 auto;
     }
 
     .servicos .itens-container .txt-sub-itens {
@@ -190,6 +191,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-bottom: 20px;
         /* margin-bottom: 343px; */
     }
 
