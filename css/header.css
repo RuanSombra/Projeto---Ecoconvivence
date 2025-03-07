@@ -6,7 +6,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 9999999999999999;
+    z-index: 99999999999;
 
     transition: .9s;
 }
@@ -108,3 +108,89 @@ header .btn-contato button:hover {
     border: 2px solid #FFB142;
     transform: scale(1.1);
 }
+
+/* Estilização do botão mobile */
+
+header .btn-menu-mob {
+    position: relative;
+    z-index: 9999999999999999999999999999999;
+}
+
+header .btn-menu-mob div {
+   background-color: #fff;
+   height: 3px;
+   margin: 10px 0;
+   transition: .2s;
+   cursor: pointer;
+}
+
+header .btn-menu-mob .line-menumob-1{
+    width: 30px;
+}
+
+header .btn-menu-mob .line-menumob-2{
+    width: 20px;
+}
+
+header.rolar .btn-menu-mob div{
+    background-color: #000;
+}
+
+header .btn-menu-mob .line-menumob-1.ativo1 {
+    transform: rotate(45deg) translate(30%);
+    background-color: #fff;
+}
+
+header .btn-menu-mob .line-menumob-2.ativo2 {
+    transform: rotate(-45deg) translate(30%);
+    background-color: #fff;
+    width: 30px;
+}
+
+/* Estilização do menu mobile */
+
+header .menu-mobile {
+    width: 0;
+    height: 0;
+    background-color: #FFB142;
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    overflow: hidden;
+    transition: .5s;
+}
+
+header .menu-mobile nav ul {
+    list-style-type: none;
+}
+
+header .menu-mobile nav a {
+    color: #fff;
+    display: block;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px 0;
+    transition: .5s;
+}
+
+header .menu-mobile nav {
+    width: 100%;
+}
+
+header .menu-mobile nav a:hover {
+    background-color: #fff;
+    color: #FFB142;
+    box-shadow: 0 0 8px #fff;
+}
+
+header .menu-mobile.abrir {
+    width: 100%;
+    height: 100vh;
+}
+ 

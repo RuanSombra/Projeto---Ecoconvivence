@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsividade.css" media="screen">
     <link rel="shortcut icon" href="images/logo_p.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>EcoConvivence</title>
@@ -19,7 +20,7 @@
             <section class="menu-desktop">
                 <nav>
                     <ul>
-                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#slider">HOME</a></li>
                         <li><a href="#sobre">SOBRE</a></li>
                         <li><a href="#servicos1">SERVIÇOS</a></li>
                         <li><a href="#projetos1">PROJETOS</a></li>
@@ -30,10 +31,26 @@
             <section class="btn-contato">
                 <a href="#contato1"><button>Contato</button></a>
             </section>
+
+            <div class="btn-menu-mob" id="btn-menu-mob">
+                <div class="line-menumob-1"></div>
+                <div class="line-menumob-2"></div>
+            </div>
+
+            <section class="menu-mobile" id="menu-mobile">
+                <nav>
+                    <ul>
+                        <li><a href="#slider">HOME</a></li>
+                        <li><a href="#sobre">SOBRE</a></li>
+                        <li><a href="#servicos1">SERVIÇOS</a></li>
+                        <li><a href="#projetos1">PROJETOS</a></li>
+                    </ul>
+                </nav>
+            </section>
         </div>
     </header>
 
-    <section class="slider">
+    <section class="slider" id="slider">
         <div class="interface">
 
             <div class="slider-container">
@@ -84,7 +101,7 @@
                 <div class="txt-itens">
                     <h3>SOBRE NÓS</h3>
                     <br>
-                    <h2>TRANSFORMANDO <span> SONHOS <br> EM REALIDADE </span></h2>
+                    <h2>TRANSFORMANDO <span> SONHOS EM REALIDADE </span></h2>
                     <br>
                     <span>
                         Desenvolvemos soluções de design criativas para elevar o bem-estar nas 
@@ -124,7 +141,7 @@
                     <br>
                     <h2>SOLUÇÕES PARA <span> SUA <br> CONSTRUÇÃO </span></h2>
                     <br>
-                    <br><br>
+                    <br>
 
                     <div class="img-itens">
                         <img src="images/image4.png" alt="">
@@ -133,14 +150,14 @@
 
                 <div class="txt-sub-itens">
                     <p>
-                        Primeiramente, temos uma conversa com nosso cliente a <br> fim de saber todos os seus objetivos para o futuro projeto. <br>
-                        Logicamente, fique a vontade de esclarecer todas as suas <br> ideias e dúvidas conosco. Além disso, essa é uma etapa <br>
+                        Primeiramente, temos uma conversa com nosso cliente a fim de saber todos os seus objetivos para o futuro projeto. 
+                        Logicamente, fique a vontade de esclarecer todas as suas ideias e dúvidas conosco. Além disso, essa é uma etapa 
                         importante para decidir o futuro do seu projeto.
                     </p>
                     
                     <h3>
-                        Os projetos são nossos desafios, <br>
-                        proporcionando uma solução e <br>
+                        Os projetos são nossos desafios, 
+                        proporcionando uma solução e 
                         um resultando incrível.
                     </h3>
                 </div>
@@ -213,7 +230,6 @@
                         <div class="overlay">Teresina, Brasil</div>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -245,14 +261,14 @@
     <footer>
         <div class="interface">
             <section class="top-footer">
-                <a href="#"><button><i class="bi bi-instagram"></i></button></a>
+                <a href="https://www.instagram.com/ecoconvivence" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
                 <a href="#"><button><i class="bi bi-whatsapp"></i></button></a>
                 <a href="#"><button><i class="bi bi-telephone"></i></button></a>
             </section>
 
             <section class="middle-footer">
                 <a href="#">Suporte</a>
-                <a href="#">Informações</a>
+                <a href="#sobre">Informações</a>
                 <a href="#">Marketing</a>
             </section>
 
@@ -264,5 +280,6 @@
 
     <script src="js/main.js"></script>
     <script src="js/menu.js"></script>
+    <script src="js/btn-menu-mob.js"></script>
 </body>
 </html>

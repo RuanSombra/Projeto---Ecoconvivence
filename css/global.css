@@ -26,25 +26,8 @@ html{
     scroll-behavior: smooth;
 }
 
-/* Resposividade */
-
-@media screen and (max-width: 935px){
-    header .menu-desktop, header .btn-contato {
-        display: none;
-    }
+body.no-overflow {
+    overflow: hidden;
 }
 
-@media screen and (max-width: 845px){
-    .slider .slider-box .texto-slider span {
-        color: #fff;
-        font-size: 1rem;
-        font-weight: 500;
-    }
-    
-    .slider .slider-box .texto-slider h1 {
-        color: #FFB142;
-        font-size: 2rem;
-        font-weight: 300;
-    }
-}
 

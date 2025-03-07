@@ -46,6 +46,7 @@ section.servicos {
 }
 
 .servicos .itens-container .txt-sub-itens p {
+    padding: 40px;
     color: #878C8D;
     display: flex;
     align-items: center;
@@ -92,7 +93,8 @@ section.servicos {
 
 .servicos .txt-adc-itens .container-servicos .paragrafo {
     /* border: 5px solid red; */
-    padding-top: 10px;
+    padding-top: 20px;
+    padding: 20 30px;
     font-size: 14px;
     text-align: justify;
 }
