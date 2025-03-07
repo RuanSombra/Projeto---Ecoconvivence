@@ -112,6 +112,7 @@ header .btn-contato button:hover {
 /* Estilização do botão mobile */
 
 header .btn-menu-mob {
+    display: none;
     position: relative;
     z-index: 9999999999999999999999999999999;
 }

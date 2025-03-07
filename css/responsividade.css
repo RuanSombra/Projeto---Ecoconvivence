@@ -24,6 +24,12 @@
 }
 
 @media screen and (max-width: 845px){
+    /* Estilização mobile */
+
+    header .btn-menu-mob {
+        display: block;
+    }
+
     /* Responsividade do slider */
     .slider .slider-box .texto-slider {
         position: absolute;
@@ -305,4 +311,6 @@
         transition: .5s;
         font-weight: 700;
     }
+
+    /* FIM */
 }
