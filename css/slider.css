@@ -47,14 +47,20 @@
 
 .slider .slider-box .texto-slider span {
     color: #fff;
-    font-size: 1.5rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 500;
 }
 
 .slider .slider-box .texto-slider h1 {
     color: #FFB142;
-    font-size: 9.375rem;
-    font-weight: bold;
+    font-size: 5rem;
+    font-weight: 300;
+}
+
+.slider .slider-box .texto-slider h1 span {
+    color: #FFB142;
+    font-size: 5rem;
+    font-weight: 700;
 }
 
 @keyframes animaTexto{
