@@ -5,8 +5,9 @@ let btnNav = document.querySelectorAll('.btn-nav-box .btn-nav');
 
 let contadorImg = imgSlider.length;
 let imgAtiva = 0;
+let intervalo;
 
-btnPos.addEventListener('click', ()=>{
+function nextImage(){
     imgAtiva++;
 
     if(imgAtiva >= contadorImg){
@@ -14,6 +15,20 @@ btnPos.addEventListener('click', ()=>{
     }
 
     mostrarSlider();
+}
+
+function iniciarAutoPlay(){
+    intervalo = setInterval(nextImage, 5000);
+}
+
+function reiniciarAutoPlay() {
+    clearInterval(intervalo);
+    iniciarAutoPlay();
+}
+
+btnPos.addEventListener('click', ()=>{
+    nextImage();
+    reiniciarAutoPlay();
 })
 
 btnAnt.addEventListener('click', ()=>{
@@ -23,6 +38,7 @@ btnAnt.addEventListener('click', ()=>{
         imgAtiva = contadorImg - 1;
     }
 
+    reiniciarAutoPlay();
     mostrarSlider();
 })
 
@@ -42,5 +58,8 @@ btnNav.forEach((btn, indice)=>{
         imgAtiva = indice;
         
         mostrarSlider();
+        reiniciarAutoPlay();
     })
-})
+});
+
+iniciarAutoPlay();
